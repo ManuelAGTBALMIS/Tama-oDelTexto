@@ -1,0 +1,95 @@
+﻿<Window
+    x:Class="TamañoDelTexto.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:TamañoDelTexto"
+    mc:Ignorable="d"
+    Title="Tamaño del Texto"
+    Icon="32.ico"
+    Height="450"
+    Width="956.857">
+    <Grid>
+        <RadioButton
+            x:Name="PequeñoRadioButton"
+            Tag="36"
+            Content="Pequeño"
+            GroupName="Grupo1_Radio"
+            HorizontalAlignment="Left"
+            Margin="160,320,0,0"
+            VerticalAlignment="Top"
+            Checked="RadioButton_Checked"
+            RenderTransformOrigin="0.5,0.5">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform
+                        ScaleY="3"
+                        ScaleX="3" />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton x:Name="MedianoRadioButton"
+            Content="Mediano"
+            Tag="48"
+            GroupName="Grupo1_Radio"
+            HorizontalAlignment="Left"
+            Margin="425,322,0,0"
+            VerticalAlignment="Top"
+            RenderTransformOrigin="0.5,0.5"
+            Checked="RadioButton_Checked"
+            Width="71">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform
+                        ScaleY="3"
+                        ScaleX="3" />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton x:Name="GrandeRadioButton"
+            Tag="72"
+            Content="Grande"
+            GroupName="Grupo1_Radio"
+            HorizontalAlignment="Left"
+            Margin="698,324,0,0"
+            VerticalAlignment="Top"
+            Checked="RadioButton_Checked"
+            RenderTransformOrigin="0.5,0.5"
+            Width="71">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform
+                        ScaleY="3"
+                        ScaleX="3" />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <TextBlock
+            x:Name="letrasTextBlock"
+            HorizontalAlignment="Center"
+            TextWrapping="Wrap"
+            Text="Desarrollo de Interfaces"
+            VerticalAlignment="Top"
+            FontSize="36"
+            FontWeight="Bold"
+            TextAlignment="Center"
+            Foreground="#FF3E8DFF"
+            Height="183"
+            Width="939"
+            Margin="10,55,0,0">
+            <TextBlock.Effect>
+                <DropShadowEffect />
+            </TextBlock.Effect>
+        </TextBlock>
+    </Grid>
+</Window>
